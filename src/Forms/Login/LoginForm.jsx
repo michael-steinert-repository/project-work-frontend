@@ -42,7 +42,11 @@ const LoginForm = (props) => {
         authenticateUser(userEntity).then(data => {
             setToken(data);
             localStorage.setItem('userEntity', JSON.stringify(data));
-            console.log(`Setting Token in Promise: Username: ${username}, Password: ${password}, Token: ${data.authorizationToken}`);
+            if (data.authorizationToken !== undefined) {
+                console.log(`Setting Token in Promise: Username: ${username}, Password: ${password}, Token: ${data.authorizationToken}`);
+            } else {
+                console.log(`Setting Token not successfully`);
+            }
         });
 
         if (token !== '') {

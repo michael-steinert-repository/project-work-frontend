@@ -22,7 +22,10 @@ const Homepage = () => {
             <Grid container spacing={3}>
                 <Grid item xs={12}>
                     <Paper className={classes.paper}>
-                        <Typography variant="body2">Homepage</Typography>
+                        <Typography variant="h4">Homepage</Typography>
+                        <Typography variant="body1">Diese Plattform bietet den Möglichkeit, um sich über spannende Themen auszutauschen!</Typography>
+                        <Typography variant="body1">Jeder Nutzer hat die Möglichkeit, eine eigene Besprechung zu eröffnen, um somit sein spannendes Thema mit anderen Nutzern zu teilen!</Typography>
+                        <Typography variant="body1">Jeder Nutzer hat die freie Wahl an welcher spannenden Besprechung er teilnehmen möchte!</Typography>
                     </Paper>
                 </Grid>
             </Grid>
